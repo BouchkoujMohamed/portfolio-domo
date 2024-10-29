@@ -1,0 +1,166 @@
+.content-contact{
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.left-contact{
+    margin-top: 20px;
+
+}
+.contact-us .title{
+    color: var(--title);
+    margin-bottom: 1rem;
+    font-size: 2.1rem;
+}
+.contact-us .title .icon-envelope{
+    color: var(--subtitle);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+.contact-us .sub-title{ 
+    color: var(--subtitle);
+    font-size: 12px;
+    margin-bottom: 2rem;
+    margin-left: 45px;
+    line-height: 1.65rem;
+}
+.contact-us label{
+    color: var(--subtitle);
+}
+.contact-us .message{
+    margin-top: 26px;
+}
+.contact-us #email ,.contact-us #message{
+    all: unset;
+    background-color: rgba(63, 63, 70, 0.15);
+    border:  1px solid rgb(63, 63, 70);
+    width: 17rem;
+    padding: 0.5rem 1.2rem;
+    margin-left: 1.2rem;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 1.1rem;
+}
+.light .contact-us #email ,.light .contact-us #message{
+    background-color: rgba(244, 244, 249, 0.742);
+    border:  1px solid rgba(60, 60, 108, 0.096);
+    color: rgba(0, 0, 0, 0.625);
+
+}
+.contact-us #message{
+    min-height: 9rem;
+    resize: vertical;
+}
+.contact-us #email:focus ,
+.contact-us #message:focus{
+    border: 1px solid rgba(93, 188, 252, 0.3);
+}
+.contact-us #email:hover ,
+.contact-us #message:hover{
+    border: 1px solid rgba(93, 188, 252, 0.3);
+}
+.light .contact-us #email:hover ,
+.light .contact-us #message:hover{
+    border: 2px solid rgba(93, 188, 252, 0.3);
+
+}
+.contact-us .submit{
+    background-color: rgba(36, 37, 46, 1);
+    padding: 0.7rem 2rem;
+    text-align: center;
+    opacity: 0.8;
+    border-radius:6px ;
+    transition: 0.3s;
+    margin-top: 2.3rem;
+    border: 1px solid rgba(63, 63, 70);
+}
+.contact-us .submit:hover{
+    opacity: 1;
+    text-shadow: 1px 1px 10px var(--blue);
+    box-shadow: 1px 1px 4px white;
+}
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.succeede{
+    justify-content: center;
+    align-items: center;
+    color: var( --title);
+
+}
+.succeede .done{
+    margin-top: 5px;
+    width: 50px;
+    text-align: center;
+
+}
+.animation-contact .email{
+    width: 300px;
+    margin-bottom:100px;
+}
+
+@media (max-width:1000px){
+    .animation-contact{
+        display: none;
+    }
+    .contact-us .left-contact{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        align-items: start;
+        margin-right: 40px;
+    }
+    .contact-us .left-contact .flex{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        align-items: start;
+        width: 90%;
+        
+    }
+    .contact-us #email ,.contact-us #message{
+        width: 100%;
+        padding: 0.5rem 0%;
+        margin-top: 1rem;
+        
+    }
+    .submit{
+        width: 20%;
+        align-self: center;
+    }
+}
+@media (max-width:600px){
+    .contact-us .animation-contact{
+        display: none;
+    }
+    .contact-us .left-contact{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        align-items: start;
+        margin-right: 40px;
+    }
+    .contact-us .left-contact .flex{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        align-items: start;
+        width: 90%;
+        
+    }
+   
+    .contact-us #email ,.contact-us #message{
+        width: 100%;
+        padding: 0.5rem 0%;
+        margin-top: 1rem;
+        
+    }
+    .submit{
+        width: 20%;
+        align-self: center;
+    }
+}
+

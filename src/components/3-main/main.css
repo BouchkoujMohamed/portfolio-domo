@@ -1,0 +1,156 @@
+.main.flex{
+    gap: 1rem;
+    align-items: start;
+}
+/*  ===================
+    == left section ==
+    ===================*/
+
+.main section.left-section{
+    flex-direction: column;
+    gap: 1rem;
+}
+.main section.left-section button{
+    background-color: rgba(36, 37, 46, 1);
+    width: 10rem;
+    padding: 0.7rem 0;
+    text-align: center;
+    opacity: 0.5;
+    border-radius:4px ;
+    transition: .3s;
+}
+.main section.left-section button:hover{
+    opacity: 1;
+    text-shadow: 1px 1px 10px var(--blue);
+}
+
+.main section.left-section button.active{
+    font-weight: bold;
+    padding: 0.9rem 0;
+    letter-spacing: 0.8px;
+    border: 1px solid var(--blue);
+    opacity:1;
+    box-shadow: 1px 1px 4px var(--blue);
+}
+.light .main section.left-section button.active{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.748);
+    border: none;
+    color: var(--blue);
+
+}
+
+
+
+/*  ===================
+    == right section ==
+    ===================*/
+.card{
+    
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    border-radius: 5px;
+    transition: 0.4s;
+    height: 350px;
+    background-image: linear-gradient(rgba(255 ,255 ,255 ,0.05) ,rgba(255 ,255 ,255 ,0.05));
+}
+.light .card ,.light .card:hover{
+    border: none;
+    box-shadow: 11px 1px 4px black;
+    box-shadow: 1px 1px 4px black;
+
+}
+.card:hover{
+    border: 1px solid var(--blue);
+    box-shadow: 1px 1px 6px rgba(93, 188, 252, 0.466);
+    cursor:pointer;
+    rotate: 1deg;
+    scale: 1.02;
+
+}
+.main section.right-section.flex{
+    justify-content: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 1.8rem;
+    
+}
+.main section.right-section .card img{
+    width: 260px;
+    border-radius: 5px;
+    height: 140px;
+
+}
+.main section.right-section .card .box{
+    width: 260px;
+    padding: 1rem 0.7rem;
+}
+.main section.right-section .card .box .title{
+    color: var(--title);
+    height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform:capitalize;
+}
+.main section.right-section .card .box .sub-title{
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.4rem;
+    height: 60px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    
+}
+.main section.right-section .card .box .links{
+    justify-content: space-between;
+}
+.card .box .links .left , .card .box .links .right{
+    font-size: 1.3rem;
+    color: var(--blue);
+    /* opacity: 0.5; */
+    margin-right: 12px;
+}
+.card .box .links .left{
+    gap: 16px;
+}
+
+.card .box .links .right p{
+    font-size: 1rem;
+    
+}
+.card .box .links .right:hover {
+    opacity: 1;
+}
+.card .box .links  a{
+    color: var(--subtitle);
+}
+.main section.right-section .card .box .links  a:hover{
+    color: var(--title);
+    text-shadow: 1px 1px 10px var(--blue);
+    
+}
+.icon-arrow-circle-right{
+    margin-top: 4px;
+}
+
+@media (max-width:600px){
+    .main.flex{
+        gap: 1rem;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main section.left-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap:0.8rem;
+        row-gap: 0.5rem;
+    }
+    .main section.left-section button{
+        width: 6rem;
+        padding: 0.5rem 0;
+        opacity: 0.5;
+        font-size: 12px;
+        
+    }
+  }
