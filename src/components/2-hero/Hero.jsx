@@ -26,15 +26,15 @@ export default function Hero() {
           softwer design , full stack Devloper
         </motion.h1>
         <p className='sub-title'>
-        i'm mohame bouchkouj my age is 23 yers old full stack developer i proficient in a wide range of programming languages, frameworks, and technologies used in web development. On the front-end side, im is skilled in HTML, CSS, and JavaScript, which im use to create the visual and interactive elements of websites or web applications. am is knowledgeable about front-end frameworks and libraries such as React.js,  which i leverage to build dynamic and responsive user interfaces.
+        I am mohame bouchkouj my age is 23 yers old full stack developer i proficient in a wide range of programming languages, frameworks, and technologies used in web development. On the front-end side, im is skilled in HTML, CSS, and JavaScript, which im use to create the visual and interactive elements of websites or web applications. am is knowledgeable about front-end frameworks and libraries such as React.js,  which i leverage to build dynamic and responsive user interfaces.
           </p>
           <div className="icons flex">
-            <div className="icon icon-facebook"></div>
-            <div className="icon icon-twitter"></div>
-            <div className="icon icon-instagram"></div>
-            <div className="icon icon-github"></div>
-            <div className="icon icon-linkedin2"></div>
-            <div className="icon"></div>
+            <a href="https://www.facebook.com/mohamed.bouchkouj/" className="icon icon-facebook" />
+            <a href='' className="icon icon-twitter" />
+            <a href= "https://www.instagram.com/____bouchkouj.mohamed____/" className="icon icon-instagram"/>
+            <a href="https://github.com/BouchkoujMohamed/" className="icon icon-github"/>
+            <a href="https://www.linkedin.com/in/mohamed-bouchkouj-8342742a9/" className="icon icon-linkedin2"/>
+            
           </div>
       </div>
 
